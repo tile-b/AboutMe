@@ -1,0 +1,73 @@
+.logoPlace{
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+position: absolute;
+right: 50px;
+top: 20px;
+width: 200px;
+
+}
+.centriranLogo{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+h2 span{
+    display: inline-flex;
+}
+h2 span:nth-child(even){
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+    letter-spacing: -1em;
+}
+
+h2:hover span:nth-child(even){
+letter-spacing: 0;
+}
+
+:hover.flicker-in-2 {
+    cursor: pointer;
+    background: none;
+	-webkit-animation: flicker-in-2 2s linear ;
+	        animation: flicker-in-2 2s linear ;
+}
+@keyframes flicker-in-2 {
+    0% {
+        opacity: 1;
+    }
+    /* From 1% to 20% (slower flicker) */
+    30%, 40%, 60%, 68%, 74% , 79%, 85%, 90%, 93%, 95%, 97% {
+        opacity: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    /* From 20.1% to 50% (faster flicker) */
+    50%, 61%, 69%, 75%, 82%, 89%, 91%, 92%, 94%, 96%, 100% {
+        opacity: 1;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@-webkit-keyframes flicker-in-2 {
+    0% {
+        opacity: 1;
+    }
+    /* From 1% to 20% (slower flicker) */
+    10%, 20%, 30%, 40%, 60%, 68%, 74% , 79%, 85%, 90%, 93%, 95%, 97% {
+        opacity: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    /* From 20.1% to 50% (faster flicker) */
+    5%,20.1%, 25%, 50%, 61%, 69%, 75%, 82%, 89%, 91%, 92%, 94%, 96%, 100% {
+        opacity: 1;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
