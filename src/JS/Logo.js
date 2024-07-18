@@ -9,8 +9,8 @@ const Logo = () => {
            
     <div className="centriranLogo">
         <h2 className="flicker-in-2">
-        <span>T</span><span>ile</span>
-        <span>D</span><span>esign</span>
+        <span style={{color:'rgb(110, 51, 110)'}}>T</span><span>ile</span>
+        <span style={{color:'rgb(110, 51, 110)'}}>D</span><span>esign</span>
         </h2>
       
     </div>
