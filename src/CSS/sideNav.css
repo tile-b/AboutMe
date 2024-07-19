@@ -2,40 +2,49 @@
 .wholeScreen {
   background-color: none;
   z-index: 30;
-  width: 300px;
+  width: 500px;
   height: 100%;
   overflow-x: hidden;
   position: fixed;
   top: 0;
   padding-top: 15px;
+
 }
 
 .sidenav {
   height: 100%;
-  width: 50px;
+  width: 60px;
   position: fixed;
-  z-index: 100;
+  z-index: 31;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #161313;
   overflow-x: hidden;
   padding-top: 20px;
+}
+.sideLine{
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 60px;
+  border: 1.5px solid #a858a8;
 }
 
 .breakLine {
   background-color: rgb(110, 51, 110);
-  height: 2px;
-  width: 20px;
+  height: 4px;
+  width: 32px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .sideIcon {
-  width: 22px;
-  height: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 35px;
+  height: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .sideIcon:hover {
@@ -48,7 +57,7 @@
 .content-box {
   display: block;
   position: absolute;
-  left: 55px;
+  left: 70px;
   top: 0;
   transition: transform 0.2s ease-in-out;
   backdrop-filter: blur(5px);
@@ -63,19 +72,19 @@
 }
 
 .conA {
-  margin-top: 33px;
+  margin-top: 70px;
 }
 
 .conB {
-  margin-top: 75px;
+  margin-top: 145px;
 }
 
 .conC {
-  margin-top: 118px;
+  margin-top: 223px;
 }
 
 .conD{
-  margin-top: 165px;
+  margin-top: 303px;
 }
 
 .centriranO {

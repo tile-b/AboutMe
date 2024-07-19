@@ -1,7 +1,7 @@
 import React from "react";
-import '../CSS/myWork.css'
+import '../CSS/projects.css'
 
-const MyWork = () => {
+const Projects = () => {
     const menuItems = [
         { id: 1, text: 'In Progress', icon: '\uf015' },
         { id: 2, text: 'Coming soon', icon: '\uf015' },
@@ -25,4 +25,4 @@ const MyWork = () => {
 </>
     )
     }
-    export default MyWork
+    export default Projects

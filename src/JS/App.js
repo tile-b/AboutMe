@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route,Routes } from 'react-router-dom';
 
-import MyWork from './MyWork'
+import Projects from './Projects'
 import Home from './Home';
 import Education from './Education';
 import Contact from './Contact';
@@ -17,7 +17,7 @@ const App = () => {
 
 <Routes>
 <Route index element={<Home/>} />
-<Route path="/projects" element={<MyWork/>} />
+<Route path="/projects" element={<Projects/>} />
 <Route path="/education" element={<Education/>} />
 <Route path="/contact" element={<Contact/>} />
 <Route path="*" element={<Home />} />

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../CSS/sideNav.css";
 import house from "../Icons/homeIco.png";
 import tool from "../Icons/toolIco.png";
@@ -20,9 +21,11 @@ const SideNav = () => {
     <>
       <div className="wholeScreen">
         <div className="sidenav">
-          <div className="centriranO">
+          <div className="centriranO" style={{paddingTop: '20px'}}>
             <div className="alpha" onMouseEnter={() => handleMouseEnter("home")} onMouseLeave={handleMouseLeave}>
+            <Link to="Home">
               <img src={house} alt="H" className="sideIcon" />
+            </Link>
             </div>
           </div>
 
@@ -32,7 +35,9 @@ const SideNav = () => {
 
           <div className="centriranO">
             <div className="b" onMouseEnter={() => handleMouseEnter("projects")} onMouseLeave={handleMouseLeave}>
+            <Link to="projects">
               <img src={tool} alt="T" className="sideIcon" />
+              </Link>
             </div>
           </div>
 
@@ -42,7 +47,9 @@ const SideNav = () => {
 
           <div className="centriranO">
             <div onMouseEnter={() => handleMouseEnter("education")} onMouseLeave={handleMouseLeave}>
+              <Link to="education">
               <img src={edu} alt="E" className="sideIcon" />
+              </Link>
             </div>
           </div>
 
@@ -52,19 +59,23 @@ const SideNav = () => {
 
           <div className="centriranO">
             <div onMouseEnter={() => handleMouseEnter("contact")} onMouseLeave={handleMouseLeave}>
+            <Link to="contact">
               <img src={con} alt="C" className="sideIcon" />
+              </Link>
             </div>
           </div>
 
-          <div className="centriranO">
+          {/* <div className="centriranO">
             <div className="breakLine"></div>
-          </div>
+          </div> */}
 
 
           <div className="centarDno">
             <div className="dnoLogo">L</div>
           </div>
         </div>
+
+<div className="sideLine"></div>
 
         <div className="content-box conA" style={{ opacity: hoveredItem === "home" ? 1 : 0, transition: "opacity 0.4s ease"}}>
   Home

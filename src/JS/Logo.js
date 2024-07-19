@@ -1,6 +1,6 @@
 import React from "react";
 import '../CSS/flicker.css'
-import panel from '../Pics/panelA.png'
+import '../CSS/logo.css'
 
 const Logo = () => {
 
@@ -8,10 +8,10 @@ const Logo = () => {
         <><div className="logoPlace">
            
     <div className="centriranLogo">
-        <h2 className="flicker-in-2">
-        <span style={{color:'rgb(110, 51, 110)'}}>T</span><span>ile</span>
-        <span style={{color:'rgb(110, 51, 110)'}}>D</span><span>esign</span>
-        </h2>
+        <h1>
+        <span style={{color:'#6766de'}}>T</span><span>ile</span>
+        <span style={{color:'#6766de'}}>D</span><span>esign</span>
+        </h1>
       
     </div>
 
